@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <div>
-          [login from]
+          [login form]
         </div>
         <div>
           [footer]
