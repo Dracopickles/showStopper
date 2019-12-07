@@ -3,9 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-// import "./App.css";
-
-// By extending the React.Component class, Counter inherits functionality from it
 class Login extends React.Component {
   // Setting the initial state of the Counter component
   // The render method returns the JSX that should be rendered
