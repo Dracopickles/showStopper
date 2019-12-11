@@ -2,9 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
+var bodyParser = require("body-parser");
 const app = express();
 
-var app = express();
+// var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,7 +31,7 @@ if (process.env.NODE_ENV === "test") {
 
 db.sequelize.sync(syncOptions).then(() =>
 app.listen(PORT, function() {
-  console.log(`🌎 ==> API server now on port ${PORT}!`);
+  console.log(`🌎 ==> API server now on port ${PORT}!, ${PORT}`);
 }));
 
 

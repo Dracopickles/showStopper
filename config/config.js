@@ -18,6 +18,7 @@ module.exports = {
   },
   production: {
     use_env_variable: "JAWSDB_RED_URL",
+    password: process.env.JAW_PASS,
     dialect: "mysql"
   }
 };
