@@ -4,7 +4,7 @@ module.exports = {
   development: {
     username: "root",
     password: process.env.DB_PASS,
-    database: "coffee_rideDB",
+    database: "show_stopperDB",
     host: "localhost",
     dialect: "mysql"
   },
