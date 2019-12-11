@@ -1,7 +1,17 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
+var bodyParser = require("body-parser");
 const app = express();
+
+// var app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public")));
+
+var db = require("./models");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -13,7 +23,17 @@ if (process.env.NODE_ENV === "production") {
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+var syncOptions = { force: false };
 
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
+
+db.sequelize.sync(syncOptions).then(() =>
 app.listen(PORT, function() {
-  console.log(`🌎 ==> API server now on port ${PORT}!`);
-});
+  console.log(`🌎 ==> API server now on port ${PORT}!, ${PORT}`);
+}));
+
+
+
+module.exports = app;
