@@ -1,0 +1,273 @@
+####################################
+#         System information       #
+####################################
+# Date:                   2019:12:10 
+# Time:                   20:53:58 
+# Xnee program:           cnee 
+# Xnee version:           3.19 
+# Xnee home:              http://www.gnu.org/software/xnee/ 
+# Xnee info mailing list: info-xnee@gnu.org 
+# Xnee bug mailing list:  bug-xnee@gnu.org 
+# X version:              11 
+# X revision:             0 
+# X vendor:               The X.Org Foundation 
+# X vendor release:       12004000 
+# Record version major:   1
+# Record version minor:   13
+# OS name:                Linux 
+# OS Release:             5.0.0-37-generic 
+# OS Version:             #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 
+# Machine:                x86_64 
+# Nodename:               chini-buntu 
+# Display name:           :0
+# Dimension:              1366x768
+
+
+
+##############################################
+#      Xnee application arguments            #
+##############################################
+#  cnee --record -o sling1.xnr --mouse --events-to-record 500 --time 5 
+
+
+##############################################
+#      Displays                              #
+##############################################
+# display :0
+# distribute
+
+
+##############################################
+#      Files                                 #
+##############################################
+# out-file sling1.xnr
+# err-file stderr
+
+
+##############################################
+#      Key Grabs                             #
+##############################################
+# stop-key         0
+# pause-key        0
+# resume-key       0
+# insert-key       0
+# exec-key         0
+# exec-program-key         xnee-exec-no-program
+
+
+##############################################
+#      Recording limits etc                  #
+##############################################
+
+events-to-record        500
+data-to-record          -1
+seconds-to-record       -1
+# first-last
+
+# Record  all (including current) clients or only future ones
+all-clients
+# future-clients
+
+# Store the starting mouse position 
+# store-mouse-position
+
+
+##############################################
+#      Resolution                            #
+##############################################
+
+# Resolution
+#recorded-resolution  1366x768
+#replay-resolution  1x1
+#resolution-adjustment  0
+
+
+##############################################
+#      Speed                                 #
+##############################################
+
+# Speed
+#speed-percent  100
+
+
+##############################################
+#      Replaying limits etc                  #
+##############################################
+
+max-threshold 20 
+min-threshold 20 
+tot-threshold 40 
+
+
+##############################################
+#      Feedback                              #
+##############################################
+#feedback-none
+#feedback-stderr
+feedback-xosd
+ 
+
+
+##############################################
+#      Various                               #
+##############################################
+
+# Plugin file 
+
+# Modes (currently not used)
+# synchronised-replay
+
+# Replay offset
+#replay-offset 0x0
+
+# Human printout of X11 data (instead of Xnee format)
+# human-printout  
+
+# Delay before starting record/replay
+# time 5
+
+# No recording of ReparentNotify
+# no-reparent-recording 
+
+# Various
+#########################################
+#          Record settings              #
+#########################################
+#   data_flags          7
+#   rState              0x5622e0d1d270
+#   xids[0]             3
+#   xids[1]             0
+# Number of Ranges      3
+# RecordRange[0]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         21-21 
+device-event-range            4-6 
+error-range                   0-0 
+# RecordRange[1]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         0-0 
+device-event-range            66-66 
+error-range                   0-0 
+# RecordRange[2]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         0-0 
+device-event-range            69-71 
+error-range                   0-0 
+7,6,613,413,0,0,0,5078231,8,'Logitech M705'
+7,6,611,415,0,0,0,5078239,8,'Logitech M705'
+7,6,607,419,0,0,0,5078247,8,'Logitech M705'
+7,6,605,422,0,0,0,5078255,8,'Logitech M705'
+7,6,601,426,0,0,0,5078263,8,'Logitech M705'
+7,6,598,433,0,0,0,5078271,8,'Logitech M705'
+7,6,594,439,0,0,0,5078279,8,'Logitech M705'
+7,6,593,444,0,0,0,5078287,8,'Logitech M705'
+7,6,589,451,0,0,0,5078295,8,'Logitech M705'
+7,6,585,454,0,0,0,5078303,8,'Logitech M705'
+7,6,582,458,0,0,0,5078309,8,'Logitech M705'
+7,6,579,463,0,0,0,5078317,8,'Logitech M705'
+7,6,574,468,0,0,0,5078325,8,'Logitech M705'
+7,6,573,473,0,0,0,5078333,8,'Logitech M705'
+7,6,570,476,0,0,0,5078341,8,'Logitech M705'
+7,6,568,480,0,0,0,5078349,8,'Logitech M705'
+7,6,564,482,0,0,0,5078357,8,'Logitech M705'
+7,6,561,483,0,0,0,5078366,8,'Logitech M705'
+7,6,561,486,0,0,0,5078373,8,'Logitech M705'
+7,6,560,487,0,0,0,5078381,8,'Logitech M705'
+7,6,559,490,0,0,0,5078387,8,'Logitech M705'
+7,6,557,494,0,0,0,5078395,8,'Logitech M705'
+7,6,556,497,0,0,0,5078403,8,'Logitech M705'
+7,6,554,500,0,0,0,5078411,8,'Logitech M705'
+7,6,553,502,0,0,0,5078419,8,'Logitech M705'
+7,6,552,505,0,0,0,5078427,8,'Logitech M705'
+7,6,551,506,0,0,0,5078435,8,'Logitech M705'
+7,6,549,508,0,0,0,5078443,8,'Logitech M705'
+7,6,548,509,0,0,0,5078451,8,'Logitech M705'
+7,6,547,509,0,0,0,5078459,8,'Logitech M705'
+7,6,545,511,0,0,0,5078467,8,'Logitech M705'
+7,6,543,513,0,0,0,5078473,8,'Logitech M705'
+7,6,543,515,0,0,0,5078481,8,'Logitech M705'
+7,6,542,517,0,0,0,5078489,8,'Logitech M705'
+7,6,540,519,0,0,0,5078497,8,'Logitech M705'
+7,6,538,521,0,0,0,5078505,8,'Logitech M705'
+7,6,537,522,0,0,0,5078513,8,'Logitech M705'
+7,6,535,523,0,0,0,5078521,8,'Logitech M705'
+7,6,534,526,0,0,0,5078529,8,'Logitech M705'
+7,6,532,528,0,0,0,5078537,8,'Logitech M705'
+7,6,530,531,0,0,0,5078545,8,'Logitech M705'
+7,6,528,535,0,0,0,5078553,8,'Logitech M705'
+7,6,525,537,0,0,0,5078559,8,'Logitech M705'
+7,6,524,540,0,0,0,5078567,8,'Logitech M705'
+7,6,522,542,0,0,0,5078575,8,'Logitech M705'
+7,6,520,543,0,0,0,5078583,8,'Logitech M705'
+7,6,518,544,0,0,0,5078591,8,'Logitech M705'
+7,6,518,545,0,0,0,5078599,8,'Logitech M705'
+7,6,517,545,0,0,0,5078645,8,'Logitech M705'
+7,6,516,545,0,0,0,5078669,8,'Logitech M705'
+7,6,515,549,0,0,0,5078677,8,'Logitech M705'
+7,6,515,550,0,0,0,5078685,8,'Logitech M705'
+7,6,515,551,0,0,0,5078701,8,'Logitech M705'
+7,6,515,553,0,0,0,5078709,8,'Logitech M705'
+7,6,515,554,0,0,0,5078715,8,'Logitech M705'
+7,6,515,555,0,0,0,5078787,8,'Logitech M705'
+7,6,515,556,0,0,0,5078803,8,'Logitech M705'
+7,6,515,558,0,0,0,5078809,8,'Logitech M705'
+7,6,515,560,0,0,0,5078817,8,'Logitech M705'
+7,6,514,561,0,0,0,5078825,8,'Logitech M705'
+7,6,514,562,0,0,0,5078833,8,'Logitech M705'
+7,6,514,563,0,0,0,5078841,8,'Logitech M705'
+7,6,514,564,0,0,0,5078849,8,'Logitech M705'
+7,6,514,566,0,0,0,5078857,8,'Logitech M705'
+7,6,513,567,0,0,0,5078881,8,'Logitech M705'
+7,6,513,568,0,0,0,5078887,8,'Logitech M705'
+7,6,513,569,0,0,0,5078895,8,'Logitech M705'
+7,6,513,573,0,0,0,5078903,8,'Logitech M705'
+7,6,512,576,0,0,0,5078911,8,'Logitech M705'
+7,6,512,582,0,0,0,5078919,8,'Logitech M705'
+7,6,512,586,0,0,0,5078927,8,'Logitech M705'
+7,6,512,588,0,0,0,5078935,8,'Logitech M705'
+7,6,512,590,0,0,0,5078951,8,'Logitech M705'
+7,4,0,0,1,0,0,5079045,8,Logitech M705
+6,4,0,0,1,0,0,5079045,2,Virtual core pointer
+7,5,0,0,1,0,0,5079131,8,Logitech M705
+6,5,0,0,1,0,0,5079131,2,Virtual core pointer
+7,6,512,591,0,0,0,5080631,8,'Logitech M705'
+7,6,512,590,0,0,0,5080647,8,'Logitech M705'
+7,6,512,590,0,0,0,5080911,8,'Logitech M705'
+7,6,512,589,0,0,0,5080927,8,'Logitech M705'
+7,6,513,589,0,0,0,5080943,8,'Logitech M705'
+7,6,513,588,0,0,0,5080965,8,'Logitech M705'
+7,6,513,588,0,0,0,5080973,8,'Logitech M705'
+7,6,513,587,0,0,0,5080997,8,'Logitech M705'
+7,6,513,587,0,0,0,5081005,8,'Logitech M705'
+7,6,513,586,0,0,0,5081013,8,'Logitech M705'
+7,6,513,586,0,0,0,5081037,8,'Logitech M705'
+7,6,513,585,0,0,0,5081067,8,'Logitech M705'
+7,6,513,585,0,0,0,5081075,8,'Logitech M705'
+7,6,513,584,0,0,0,5081091,8,'Logitech M705'
+7,6,513,584,0,0,0,5081099,8,'Logitech M705'
+7,6,513,583,0,0,0,5081115,8,'Logitech M705'
+7,6,513,582,0,0,0,5081123,8,'Logitech M705'
+7,6,513,582,0,0,0,5081139,8,'Logitech M705'
+7,6,514,580,0,0,0,5081145,8,'Logitech M705'
+7,6,515,579,0,0,0,5081194,8,'Logitech M705'
+7,6,516,579,0,0,0,5081201,8,'Logitech M705'
+7,6,516,578,0,0,0,5081225,8,'Logitech M705'
+7,6,516,577,0,0,0,5081231,8,'Logitech M705'
+7,6,517,576,0,0,0,5081247,8,'Logitech M705'
+7,6,518,576,0,0,0,5081263,8,'Logitech M705'
+7,6,518,575,0,0,0,5081271,8,'Logitech M705'
