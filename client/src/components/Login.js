@@ -1,6 +1,5 @@
-import React from "react";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import React, { Component } from "react";
+import { Modal, Button, Row, Col, Form } from 'react-bootstrap';
 
 
 class Login extends React.Component {
@@ -22,7 +21,7 @@ class Login extends React.Component {
     <Form.Control type="password" placeholder="Password" />
   </Form.Group>
   <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
+    <Form.Check type="checkbox" label="Remember me" />
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit
