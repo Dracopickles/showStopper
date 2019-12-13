@@ -1,11 +1,7 @@
-import React from "react";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import React, { Component } from "react";
+import { Modal, Button, Row, Col, Form } from 'react-bootstrap';
 
 
-// import "./App.css";
-
-// By extending the React.Component class, Counter inherits functionality from it
 class Login extends React.Component {
   // Setting the initial state of the Counter component
   // The render method returns the JSX that should be rendered
@@ -25,7 +21,7 @@ class Login extends React.Component {
     <Form.Control type="password" placeholder="Password" />
   </Form.Group>
   <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
+    <Form.Check type="checkbox" label="Remember me" />
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit
