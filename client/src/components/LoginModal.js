@@ -2,37 +2,6 @@ import React, { Component } from "react";
 import { Modal, Button, Row, Col, Form } from 'react-bootstrap';
 
 
-// export class LoginModal extends Component {
-//   constructor(props) {
-//     super(props);
-//   }
-
-//   //we want the modal to render on the login click
-//   render() {
-//     return (
-//       <Modal show={show} onHide={handleClose} animation={false}>
-//         <Modal.Header closeButton>
-//           <Modal.Title>
-//             Add Login Form
-//           </Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//           <div className="container">
-
-//           </div>
-//           </Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleClose}>
-//             Close
-//           </Button>
-//           <Button variant="primary" onClick={handleClose}>
-//             Save Changes
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     );
-//   }
-// }
 class LoginModal extends Component {
 
 
