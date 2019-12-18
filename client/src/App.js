@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header"
+import Registration from "./components/Registration"
 import LoginModal from "./components/LoginModal"
+import HomePage from "./components/HomePage"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -21,8 +23,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header handleShow = {this.handleShow} />
+        <Header/>
         <LoginModal handleClose = {this.handleClose} show = {this.state.show} />
+        <HomePage />
         <div>
           [footer] karl was here
         </div>
