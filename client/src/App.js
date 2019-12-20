@@ -6,6 +6,7 @@ import LoginModal from "./components/LoginModal"
 import HomePage from "./components/HomePage"
 // import ShowGrid from "./components/ShowGrid"
 import { FixedSizeList as List } from 'react-window';
+import AutoSizer from "react-virtualized-auto-sizer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Column = ({ index, style }) => (
@@ -32,15 +33,19 @@ class App extends Component {
         <Header/>
         <LoginModal handleClose = {this.handleClose} show = {this.state.show} />
         <HomePage />
-        <List
-    height={75}
-    itemCount={1000}
-    itemSize={100}
-    layout="horizontal"
-    width={300}
-  >
-    {Column}
-  </List>
+        <AutoSizer>
+          {({ height, width }) => (
+          
+          <List
+          height={150}
+          itemCount={1000}
+          itemSize={100}
+          layout="horizontal"
+          width={width}
+        >
+          {Column}
+          </List>)}
+        </AutoSizer>
 
         <div>
           [footer] karl was here

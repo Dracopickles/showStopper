@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.List{
+  width: auto;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
   height: 80px;
