@@ -4,7 +4,6 @@ import Header from "./components/Header"
 // import Registration from "./components/Registration"
 import LoginModal from "./components/LoginModal"
 import HomePage from "./components/HomePage"
-// import ShowGrid from "./components/ShowGrid"
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from "react-virtualized-auto-sizer"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,11 +29,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
+        <Header handleShow={this.handleShow}/>
         <LoginModal handleClose = {this.handleClose} show = {this.state.show} />
         <HomePage />
         <AutoSizer>
-          {({ height, width }) => (
+          {({ width }) => (
           
           <List
           height={150}
@@ -47,12 +46,6 @@ class App extends Component {
           </List>)}
         </AutoSizer>
 
-        <div>
-          [footer] karl was here
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
