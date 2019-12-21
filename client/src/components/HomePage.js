@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Carousel from 'react-bootstrap/Carousel'
 
-class Registration extends Component {
+class HomePage extends Component {
   render() {
     return (
       <Carousel>
@@ -56,4 +56,4 @@ class Registration extends Component {
     )
   }
 }
-export default Registration;
+export default HomePage;
