@@ -1,9 +1,16 @@
 import React, { Component } from "react";
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+import { FixedSizeList as List } from 'react-window';
+import AutoSizer from "react-virtualized-auto-sizer";
+
+const Column = ({ index, style }) => (
+  <div style={style}>Column {index}</div>
+);
 
 class HomePage extends Component {
   render() {
     return (
+      <div>
       <Carousel>
         <Carousel.Item>
           <img
@@ -52,8 +59,26 @@ class HomePage extends Component {
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </Carousel.Caption>
         </Carousel.Item>
+        
       </Carousel>
+      <div>
+        <AutoSizer>
+          {({ width }) => (
+          <List
+          height={150}
+          itemCount={1000}
+          itemSize={100}
+          layout="horizontal"
+          width={width}
+        >
+          {Column}
+          </List>)}
+        </AutoSizer>
+      </div>
+      </div>
     )
   }
 }
+
+
 export default HomePage;

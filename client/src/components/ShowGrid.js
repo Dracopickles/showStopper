@@ -15,3 +15,5 @@ const Example = () => (
     {Column}
   </List>
 );
+
+export default ShowGrid;
