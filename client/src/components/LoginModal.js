@@ -6,11 +6,10 @@ class LoginModal extends Component {
 
 
   render() {
-
     return (
       <div>
 
-        <Modal show={this.props.show}>
+        <Modal id="findMe" show={this.props.show}>
           <Modal.Header >
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
