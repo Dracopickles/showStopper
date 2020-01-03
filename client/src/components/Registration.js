@@ -69,4 +69,4 @@ class Registration extends Component {
     )
   }
 }
-  export default Registration;
+  export default Thingy;

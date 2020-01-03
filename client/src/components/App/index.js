@@ -7,15 +7,22 @@ import LandingPage from '../Landing';
 import SignUpPage from '../Signup';
 import SignInPage from '../Signin';
 import PasswordForgetPage from '../PasswordForget';
-import HomePage from '../Home';
+// import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
 
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
+import HomePage from '../HomePage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 
 const App = () => (
+
+  
   <Router>
     <div>
     <Navigation />
@@ -26,9 +33,10 @@ const App = () => (
       <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
       <Route path={ROUTES.SIGN_IN} component={SignInPage} />
       <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
-      <Route path={ROUTES.HOME} component={HomePage} />
+      {/* <Route path={ROUTES.HOME} component={HomePage} /> */}
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
+      <Route path={ROUTES.HOMEPAGE} component={HomePage} />
     </div>
   </Router>
   );
