@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactreadinglist"
+  "mongodb://localhost/reactmoviefinder"
 );
 
 const serviceProviderSeed = [
@@ -14,7 +14,7 @@ const serviceProviderSeed = [
     url: "https://www.netflix.com/Login"
   },
   {
-    name: "Apple Tv Plus",
+    name: "Amazon Prime",
     url: "https://tv.apple.com/?ign-itscg=MC_20000&ign-itsct=atvp_brand_omd&mttnagencyid=1625&mttncc=US&mttnpid=62092&mttnsiteid=143238&mttnsubad=OUS2019827-2"
   },
   {
