@@ -37,7 +37,7 @@ class App extends Component {
           
           <List
           height={150}
-          itemCount={1000}
+          itemCount={15}
           itemSize={100}
           layout="horizontal"
           width={width}
