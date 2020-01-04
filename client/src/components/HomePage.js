@@ -5,6 +5,7 @@ import AutoSizer from "react-virtualized-auto-sizer";
 
 const Column = ({ index, style }) => (
   <div style={style}>Column {index}</div>
+
 );
 
 class HomePage extends Component {
@@ -15,48 +16,48 @@ class HomePage extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.ytimg.com/vi/kIcJwrQSUmY/hqdefault.jpg"
+            src="/c1.png"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Pulp Fiction (1994)</h3>
+            <p>Quentin Tarantino.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.ytimg.com/vi/6F83UKZ4_1E/hqdefault.jpg"
+            src="/c2.png"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Jurassic Park (1993)</h3>
+            <p>Steven Spielberg</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="http://mrvpn.com/wp-content/uploads/2012/10/hbo_go_logo_feature-300x175.png"
+            src="/c3.png"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <h3>Fourth slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>Robocop (1987)</h3>
+            <p>Paul Verhoeven</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://eldiariony.files.wordpress.com/2018/03/download.png?w=341"
+            src="/c4.png"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <h3>Fourth slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>Saving Private Ryan (1998)</h3>
+            <p>Steven Spielberg</p>
           </Carousel.Caption>
         </Carousel.Item>
         
