@@ -11,7 +11,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-      <Carousel>
+       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -61,12 +61,12 @@ class HomePage extends Component {
         </Carousel.Item>
         
       </Carousel>
-      <div>
+      <div id="maryussuperboy" style={{minHeight: '150px'}}>
         <AutoSizer>
           {({ width }) => (
           <List
           height={150}
-          itemCount={1000}
+          itemCount={50}
           itemSize={100}
           layout="horizontal"
           width={width}
