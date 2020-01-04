@@ -66,7 +66,7 @@ class HomePage extends Component {
           {({ width }) => (
           <List
           height={150}
-          itemCount={50}
+          itemCount={12}
           itemSize={100}
           layout="horizontal"
           width={width}
