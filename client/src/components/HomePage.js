@@ -25,7 +25,7 @@ class ShowRepeater extends Component {
             <img
               className="d-block w-100"
               src={data.artwork_608x342}
-              alt="First slide"
+              alt="show slides"
             />
             <Carousel.Caption>
               <h3>{data.title}</h3>
@@ -56,7 +56,7 @@ class HomePage extends Component {
           console.log(this.netflixData);
         });
       })
-    fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=hulu`)
+    fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=hulu_plus`)
       .then(response => {
         response.json().then(data => {
           this.huluData = data;
@@ -67,58 +67,10 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/c1.png"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>Pulp Fiction (1994)</h3>
-              <p>Quentin Tarantino.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/c2.png"
-              alt="Third slide"
-            />
 
-            <Carousel.Caption>
-              <h3>Jurassic Park (1993)</h3>
-              <p>Steven Spielberg</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/c3.png"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Robocop (1987)</h3>
-              <p>Paul Verhoeven</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/c4.png"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Saving Private Ryan (1998)</h3>
-              <p>Steven Spielberg</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-        </Carousel>
-
+        <h1><a href="https://www.netflix.com/">NETFLIX</a></h1>
         <ShowRepeater showData={this.netflixData.results} />
+        <h2><a href="https://www.hulu.com/tv">HULU</a></h2>
         <ShowRepeater showData={this.huluData.results} />
 
 
