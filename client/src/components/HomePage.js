@@ -35,8 +35,9 @@ class ShowRepeater extends Component {
       })
     }
     return (
-
+      <div>
       <Carousel>{showData}</Carousel>
+      </div>
     )
   }
 
