@@ -1,44 +1,65 @@
 import React, { Component } from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import { FixedSizeList as List } from 'react-window';
-import AutoSizer from "react-virtualized-auto-sizer";
+import { Row, Container, Col } from "react-bootstrap";
+// import { FixedSizeList as List } from 'react-window';
+// import AutoSizer from "react-virtualized-auto-sizer";
 
 class ShowRepeater extends Component {
 
-  
-  render(){
-  let showData = () => {return(
-    <div>No Results</div>
-  )}
-    if (this.props.showData !== undefined){
-    console.log(this.props);
-     showData = this.props.showData.map(data => {
-      return(
-      <div>
-        {data.title}
-      </div>
+
+  render() {
+    let showData = () => {
+      return (
+      <Carousel.Item key={0}>
+        <Carousel.Caption>
+          <h3>No Results</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
       )
-    })
-  }
-    return(
-      <div>
-        {showData}
-      </div>
+    }
+    if (this.props.showData !== undefined) {
+      console.log(this.props);
+      showData = this.props.showData.map(data => {
+        return (
+          <Carousel.Item key={data.id}>
+            <img
+              className="d-block w-100"
+              src={data.artwork_608x342}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>{data.title}</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+        )
+      })
+    }
+    return (
+
+      <Carousel>{showData}</Carousel>
     )
   }
 
 }
 
 class HomePage extends Component {
-
+  API_Key = "7d4cf0b3e896a3e8cc71cf02afe6169394482044";
+  API_URL = "http://api-public.guidebox.com/v2/shows";
+  huluData = {}
   netflixData = {}
   componentDidMount() {
-    fetch("http://api-public.guidebox.com/v2/shows?api_key=7d4cf0b3e896a3e8cc71cf02afe6169394482044&sources=netflix")
+    fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=netflix`)
       .then(response => {
         response.json().then(data => {
           this.netflixData = data;
           console.log(this.netflixData);
-          
+        });
+      })
+    fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=hulu`)
+      .then(response => {
+        response.json().then(data => {
+          this.huluData = data;
+          console.log(this.huluData);
         });
       })
   }
@@ -95,27 +116,11 @@ class HomePage extends Component {
           </Carousel.Item>
 
         </Carousel>
-        <div id="showSlider" style={{ minHeight: '150px' }}>
-          {/* <AutoSizer>
-          {({ width }) => (
-          <List
-          height={150}
-          itemCount={this.netflixData.total_returned}
-          itemSize={100}
-          layout="horizontal"
-          width={width}
-        >
-          <Column 
-          
-          >
-            
-          </Column>>
-          </List>)}
-        </AutoSizer> */}
 
         <ShowRepeater showData={this.netflixData.results} />
+        <ShowRepeater showData={this.huluData.results} />
 
-        </div>
+
       </div>
     )
   }
