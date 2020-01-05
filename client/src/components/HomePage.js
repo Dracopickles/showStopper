@@ -3,10 +3,31 @@ import Carousel from 'react-bootstrap/Carousel';
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from "react-virtualized-auto-sizer";
 
-const Column = ({ index, style }) => (
-  <div style={style}>Column {index}</div>
+class ShowRepeater extends Component {
 
-);
+  
+  render(){
+  let showData = () => {return(
+    <div>No Results</div>
+  )}
+    if (this.props.showData !== undefined){
+    console.log(this.props);
+     showData = this.props.showData.map(data => {
+      return(
+      <div>
+        {data.title}
+      </div>
+      )
+    })
+  }
+    return(
+      <div>
+        {showData}
+      </div>
+    )
+  }
+
+}
 
 class HomePage extends Component {
 
@@ -75,7 +96,7 @@ class HomePage extends Component {
 
         </Carousel>
         <div id="showSlider" style={{ minHeight: '150px' }}>
-          <AutoSizer>
+          {/* <AutoSizer>
           {({ width }) => (
           <List
           height={150}
@@ -84,9 +105,16 @@ class HomePage extends Component {
           layout="horizontal"
           width={width}
         >
-          {Column}
+          <Column 
+          
+          >
+            
+          </Column>>
           </List>)}
-        </AutoSizer>
+        </AutoSizer> */}
+
+        <ShowRepeater showData={this.netflixData.results} />
+
         </div>
       </div>
     )
