@@ -10,11 +10,11 @@ class ShowRepeater extends Component {
   render() {
     let showData = () => {
       return (
-      <Carousel.Item key={0}>
-        <Carousel.Caption>
-          <h3>No Results</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
+        <Carousel.Item key={0}>
+          <Carousel.Caption>
+            <h3>No Results</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
       )
     }
     if (this.props.showData !== undefined) {
@@ -36,7 +36,7 @@ class ShowRepeater extends Component {
     }
     return (
       <div>
-      <Carousel>{showData}</Carousel>
+        <Carousel>{showData}</Carousel>
       </div>
     )
   }
@@ -48,6 +48,8 @@ class HomePage extends Component {
   API_URL = "http://api-public.guidebox.com/v2/shows";
   huluData = {}
   netflixData = {}
+  amazonData = {}
+  disneyData ={}
   componentDidMount() {
     fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=netflix`)
       .then(response => {
@@ -63,6 +65,20 @@ class HomePage extends Component {
           console.log(this.huluData);
         });
       })
+    fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=amazon_prime`)
+      .then(response => {
+        response.json().then(data => {
+          this.amazonData = data;
+          console.log(this.amazonData);
+        });
+      })
+    fetch(`${this.API_URL}?api_key=${this.API_Key}&sources=disney_plus`)
+      .then(response => {
+        response.json().then(data => {
+          this.disneyData = data;
+          console.log(this.disneyData);
+        });
+      })
   }
   render() {
     return (
@@ -70,9 +86,12 @@ class HomePage extends Component {
 
         <h1><a href="https://www.netflix.com/">NETFLIX</a></h1>
         <ShowRepeater showData={this.netflixData.results} />
-        <h2><a href="https://www.hulu.com/tv">HULU</a></h2>
+        <h1><a href="https://www.hulu.com/tv">HULU</a></h1>
         <ShowRepeater showData={this.huluData.results} />
-
+        <h1><a href="https://www.amazon.com/Amazon-Video/b?node=2858778011">AMAZON VIDEO</a></h1>
+        <ShowRepeater showData={this.amazonData.results} />
+        <h1><a href="https://www.disneyplus.com/">DISNEY+</a></h1>
+        <ShowRepeater showData={this.disneyData.results} />
 
       </div>
     )
