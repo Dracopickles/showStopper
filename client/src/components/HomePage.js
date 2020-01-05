@@ -84,11 +84,7 @@ class HomePage extends Component {
           layout="horizontal"
           width={width}
         >
-          <Column 
-          
-          >
-            
-          </Column>>
+          {Column}
           </List>)}
         </AutoSizer>
         </div>
