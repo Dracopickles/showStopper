@@ -1,15 +1,15 @@
-require("dotenv").config();
+const mongoose = require("mongoose");
+const routes = require("./routes");
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const PORT = process.env.PORT || 3001;
-var bodyParser = require("body-parser");
+// var bodyParser = require("body-parser");
 const app = express();
 
 // var app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 var db = require("./models");
 
@@ -20,19 +20,18 @@ if (process.env.NODE_ENV === "production") {
 
 // Send every request to the React app
 // Define any API routes before this runs
+app.use(routes);
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-var syncOptions = { force: false };
 
-if (process.env.NODE_ENV === "test") {
-  syncOptions.force = true;
-}
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactuserhub");
 
-db.sequelize.sync(syncOptions).then(() =>
+
 app.listen(PORT, function() {
-  console.log(`🌎 ==> API server now on port ${PORT}!, ${PORT}`);
-}));
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
 
 
 
