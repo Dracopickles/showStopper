@@ -4,8 +4,8 @@ import { Row, Container, Col } from "react-bootstrap";
 // import { FixedSizeList as List } from 'react-window';
 // import AutoSizer from "react-virtualized-auto-sizer";
 
-class ShowRepeater extends Component {
 
+class ShowRepeater extends Component {
 
   render() {
     let showData = () => {
@@ -28,7 +28,9 @@ class ShowRepeater extends Component {
               alt="show slides"
             />
             <Carousel.Caption>
-              <h3>{data.title}</h3>
+
+              {/* <h3>{data.title}</h3> */}
+              <p><a href={'https://www.imdb.com/title/' + data.imdb_id}><img src="/imdb.png" /></a></p>
             </Carousel.Caption>
           </Carousel.Item>
         )
