@@ -20,7 +20,11 @@ const tempStyles = {
 const NavigationAuth = () => (
  <div> 
    <Nav
+<<<<<<< HEAD
   activeKey="/home"
+=======
+  activeKey="/home" className="baby" 
+>>>>>>> 5da8b53a3f48df71e5b7f66bbae0e91234851ee4
   
 >
   <Nav.Item>
