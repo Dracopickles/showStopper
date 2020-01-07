@@ -1,6 +1,7 @@
 node_modules
 .vscode/
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 .vscode/
@@ -11,3 +12,6 @@ node_modules
 >>>>>>> aeef31b6b1fddd5f2e92ac6c137d0aa393dab3cb
 =======
 >>>>>>> c41d11bccba8a0c3de3760cfbf39f5d1f6f4a49a
+=======
+.env
+>>>>>>> 98032fcd255ac4ac26cef98af1bbc447aea6f933
