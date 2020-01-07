@@ -30,6 +30,7 @@ a:active {
 
 .logForm {
   color:white;
+  display: inline-block;
   margin: 20px 0px 20px 0px;
   display:flex;
   box-sizing: border-box;
@@ -50,7 +51,8 @@ a:active {
   }
 
 .logForm2 {
-color:white;
+display: inline-block;
+color: white;
 margin: 20px 0px 20px 0px;
 display:flex;
 box-sizing: border-box;

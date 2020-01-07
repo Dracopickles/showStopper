@@ -5,17 +5,23 @@ import { SignUpLink } from '../Signup';
 import { PasswordForgetLink } from '../PasswordForget';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+
+import {Animated} from "react-animated-css";
+
 const SignInPage = () => (
   <div>
+    <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
     <div className="box2">
     <form className="logForm2">
     <h1>Sign In</h1>
    <p><SignInForm /></p> 
     <PasswordForgetLink />
-    <SignUpLink />
-    </form>
+    <SignUpLink /> 
+    </form > 
     </div>
+    </Animated>
   </div>
+  
 );
 const INITIAL_STATE = {
   email: '',
