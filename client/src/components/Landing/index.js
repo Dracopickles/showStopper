@@ -5,7 +5,11 @@ const Landing = () => <div>
 
 <h1>SHOW STOPPER</h1>
 
-<Carousel>
+{
+
+
+
+/* <Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -54,7 +58,7 @@ const Landing = () => <div>
     </Carousel.Caption>
   </Carousel.Item>
 
-</Carousel>
+</Carousel> */}
 
 
 </div>

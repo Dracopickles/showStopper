@@ -84,7 +84,7 @@ class HomePage extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="app-container" div className="App container">
 
         <h1><a href="https://www.netflix.com/">NETFLIX</a></h1>
         <ShowRepeater showData={this.netflixData.results} />

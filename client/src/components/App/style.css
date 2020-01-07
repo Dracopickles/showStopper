@@ -1,0 +1,55 @@
+body {
+  background-image: url("/c3.png");
+  font-family: 'Abel', sans-serif;
+  background-size: cover;
+}
+
+.baby {
+  color: #FFFFFF;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  font-family: 'Abel', sans-serif;
+  font-style: normal;
+}
+
+.app-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+a {
+  color: #FFFFFF
+}
+
+a:hover {
+  color: rgb(247, 100, 41);
+}
+
+a:active {
+  color: blue;
+}
+
+.logForm {
+  color:white;
+  display:flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: rgba(0, 0, 0, 0.507);
+  display: table-cell;
+  text-align: center;
+  position: fixed;
+  
+  }
+
+  .logForm2 {
+    color:white;
+    display:flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 20px;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: table-cell;
+    text-align: center;
+    position: fixed;
+    
+    }
