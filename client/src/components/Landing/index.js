@@ -1,11 +1,18 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide';
 
 
-const Landing = () => <div>
+const Landing = () =>
+
+<div>
 
 {
  
- <h1> </h1>
+ <h1> 
+   <div className="appName">
+     Show/Stopper
+   </div>
+ </h1>
 
 
 /* <Carousel>
@@ -57,7 +64,7 @@ const Landing = () => <div>
     </Carousel.Caption>
   </Carousel.Item>
 
-</Carousel> */}
+</Carousel> */ }
 
 
 </div>

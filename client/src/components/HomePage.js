@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import Slide from 'react-reveal/Slide';
 import { Row, Container, Col } from "react-bootstrap";
 // import { FixedSizeList as List } from 'react-window';
 // import AutoSizer from "react-virtualized-auto-sizer";
+// pending Slide animation - react Reveal
 
 
 class ShowRepeater extends Component {
