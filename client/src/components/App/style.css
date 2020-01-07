@@ -2,6 +2,7 @@ body {
   background-image: url("/c3.png");
   font-family: 'Abel', sans-serif;
   background-size: cover;
+  
 }
 
 .baby {
@@ -78,9 +79,17 @@ padding:0px 0px 70px 0px;
  .appName {
    color: white;
    text-align: center;
-   align-content: center;
    font-size: 100px;
-   
+   animation: fadeInAnimation ease 3s ;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
  }
-
- 
