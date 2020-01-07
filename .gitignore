@@ -1,3 +1,21 @@
 node_modules
 .vscode/
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.vscode/
+=======
 .env
+.DS_Store
+>>>>>>> 53f0433e190a72d4496ef2bc07a03b8eaaa1adb5
+>>>>>>> aeef31b6b1fddd5f2e92ac6c137d0aa393dab3cb
+=======
+>>>>>>> c41d11bccba8a0c3de3760cfbf39f5d1f6f4a49a
+=======
+.env
+>>>>>>> 98032fcd255ac4ac26cef98af1bbc447aea6f933
+=======
+.env
+>>>>>>> 5da8b53a3f48df71e5b7f66bbae0e91234851ee4
