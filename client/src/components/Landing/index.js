@@ -1,12 +1,11 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+
 
 const Landing = () => <div>
 
-<h1>SHOW STOPPER</h1>
-
 {
-
+ 
+ <h1> </h1>
 
 
 /* <Carousel>

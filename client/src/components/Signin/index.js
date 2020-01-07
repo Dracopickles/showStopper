@@ -7,12 +7,14 @@ import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 const SignInPage = () => (
   <div>
+    <div className="box2">
     <form className="logForm2">
     <h1>Sign In</h1>
-    <SignInForm />
+   <p><SignInForm /></p> 
     <PasswordForgetLink />
     <SignUpLink />
     </form>
+    </div>
   </div>
 );
 const INITIAL_STATE = {

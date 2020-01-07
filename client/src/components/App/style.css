@@ -30,26 +30,45 @@ a:active {
 
 .logForm {
   color:white;
+  margin: 20px 0px 20px 0px;
   display:flex;
   box-sizing: border-box;
-  width: 100%;
   padding: 16px 20px;
   background-color: rgba(0, 0, 0, 0.507);
-  display: table-cell;
+  display: block;
   text-align: center;
-  position: fixed;
-  
+  position: fixed; 
   }
 
-  .logForm2 {
-    color:white;
-    display:flex;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 16px 20px;
-    background-color: rgba(0, 0, 0, 0.507);
-    display: table-cell;
-    text-align: center;
-    position: fixed;
-    
-    }
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+.logForm2 {
+color:white;
+margin: 20px 0px 20px 0px;
+display:flex;
+box-sizing: border-box;
+padding: 16px 20px;
+background-color: rgba(0, 0, 0, 0.507);
+display: block;
+text-align: center;
+position: fixed; 
+}
+
+.box1 {
+width:300px;
+margin: 0 auto 0 auto;
+padding:0px 0px 70px 0px;
+}
+
+.box2 {
+width:300px;
+margin: 0 auto 0 auto;
+padding:0px 0px 70px 0px;
+ }
