@@ -8,6 +8,8 @@ import { FixedSizeList as List } from 'react-window';
 import AutoSizer from "react-virtualized-auto-sizer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 const Column = ({ index, style }) => (
   <div style={style}>Column {index}</div>
 );

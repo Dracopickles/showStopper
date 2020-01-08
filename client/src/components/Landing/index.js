@@ -1,12 +1,18 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import Slide from 'react-reveal/Slide';
 
-const Landing = () => <div>
 
-<h1>SHOW STOPPER</h1>
+const Landing = () =>
+
+<div>
 
 {
-
+ 
+ <h1> 
+   <div className="appName">
+     Show/Stopper
+   </div>
+ </h1>
 
 
 /* <Carousel>
@@ -58,7 +64,7 @@ const Landing = () => <div>
     </Carousel.Caption>
   </Carousel.Item>
 
-</Carousel> */}
+</Carousel> */ }
 
 
 </div>
