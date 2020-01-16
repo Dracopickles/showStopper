@@ -4,13 +4,21 @@ import { AuthUserContext, withAuthorization } from '../Session';
 import { PasswordForgetForm } from '../PasswordForget';
 import PasswordChangeForm from '../PasswordChange';
 
+import {Animated} from "react-animated-css";
+
 const AccountPage = () => (
   <AuthUserContext.Consumer>
     {authUser => (
   <div>
-    <h1>Account Page</h1>
-    <PasswordForgetForm />
-    <PasswordChangeForm />
+    <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+    <div className="box1">
+    <form className="logForm">
+    <h1>Account Password</h1>
+    <p><PasswordForgetForm /></p>
+    <p><PasswordChangeForm /></p>
+    </form>
+    </div>
+    </Animated>
   </div>
   )}
   </AuthUserContext.Consumer>

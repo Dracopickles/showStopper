@@ -1,0 +1,216 @@
+body {
+  background-image: url("/c3.png");
+  font-family: 'Abel', sans-serif;
+  background-size: cover;
+
+  width:100%;
+  height:100%;
+}
+body {
+ margin: 0;
+}
+.container 
+{
+width:100%;
+height:100%;
+}
+#slideshow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width:100%;
+  height:100%;
+  display: inline-block;
+}
+.elemnt,.elemnt1,.elemnt2,.elemnt3 {
+position: absolute;
+left: 0;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+display: inline-block;
+text-align: center;
+}
+span{
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 hsla(0,0%,30%, .3);
+  font-size:4em;
+  background-color:#fff
+}
+.elemnt {
+  animation: xfade 16s 8s infinite;
+  background-image: url("/c1.png");
+}
+.elemnt1 {
+  animation: xfade 16s 6s infinite;
+  background-image: url("/c2.png");
+  
+}
+.elemnt2 {
+  animation: xfade 16s 2s infinite;
+  background-image: url("/c4.png");
+}
+.elemnt3 {
+  animation: xfade 16s 0s infinite;
+  background-image: url("/c1.png");
+  
+}
+@keyframes xfade{
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+}
+@keyframes xfade1{
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+}
+@keyframes xfade2{
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+}
+@keyframes xfade3{
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+}
+  
+
+
+.baby {
+  color: #FFFFFF;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  font-family: 'Abel', sans-serif;
+  font-style: normal;
+}
+
+.app-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+a {
+  color: #FFFFFF
+}
+
+a:hover {
+  color: rgb(247, 100, 41);
+}
+
+a:active {
+  color: blue;
+}
+
+.logForm {
+  margin: auto;
+  color:white;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  background-color: rgba(0, 0, 0, 0.507);
+  display: block;
+  text-align: center;
+  position: fixed; 
+  }
+
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+.logForm2 {
+display: inline-block;
+color: white;
+margin: auto;
+display:flex;
+box-sizing: border-box;
+padding: 16px 20px;
+background-color: rgba(0, 0, 0, 0.507);
+display: block;
+text-align: center;
+position: fixed; 
+}
+
+.box1 {
+width:300px;
+margin: 0 auto 0 auto;
+padding:0px 0px 70px 0px;
+
+}
+
+.box2 {
+width:300px;
+margin: 0 auto 0 auto;
+padding:0px 0px 70px 0px;
+flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+ }
+
+ .appName {
+   color: white;
+   align-items: center;
+   text-align: center;
+   font-size: 100px;
+   animation: fadeInAnimation ease 3s ;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+  
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+ }
+
+ .passFor {
+  align-content: center; 
+  display: inline-block;
+  color: white;
+  margin: 20px 0px 20px 0px;
+  display:flex;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  background-color: rgba(0, 0, 0, 0.507);
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+padding: 16px 20px;
+     }
+ 

@@ -16,6 +16,7 @@ import { withAuthentication } from '../Session';
 import HomePage from '../HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import "./style.css"
 
 
 

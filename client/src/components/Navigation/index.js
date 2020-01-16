@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
 import SignOutButton from '../Signout';
 import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
@@ -11,10 +12,37 @@ const Navigation = () => (
   }
 </AuthUserContext.Consumer></div>
 );
+
+const tempStyles = {
+  color: 'red'
+}
+
 const NavigationAuth = () => (
-  <ul>
+ <div> 
+   <Nav
+  activeKey="/home" className="baby" 
+  
+>
+  <Nav.Item>
+    <Nav.Link href={ROUTES.LANDING}>Landing</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+  <Nav.Link href={ROUTES.HOMEPAGE}>Home</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link href={ROUTES.ACCOUNT}>Account</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link href={ROUTES.ADMIN}>Admin</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+      <SignOutButton />
+      {/* <Button variant="dark">Dark Test</Button> */}
+    </Nav.Item>
+</Nav>
+{/* <ul>
     <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+      <Link style={tempStyles} to={ROUTES.LANDING}>Landing</Link>
     </li>
     <li>
       <Link to={ROUTES.HOMEPAGE}>Home</Link>
@@ -27,8 +55,10 @@ const NavigationAuth = () => (
     </li>
     <li>
       <SignOutButton />
+      <Button variant="dark">Dark Test</Button>
     </li>
-  </ul>
+  </ul> */}
+  </div>
 );
 
 const NavigationNonAuth = () => (
