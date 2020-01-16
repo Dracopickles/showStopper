@@ -8,7 +8,7 @@ movies = Guidebox.movies.list();
 
 //Have shows display in slider based on service provider
 
-//Example: shows = guidebox.Show.list(channel="hbo")
+//Example: shows = guidebox.Show.list(channel="disney_plus")
 //Example: shows = guidebox.Show.list(channel="netflix")
 //Example: shows = guidebox.Show.list(channel="hulu")
 //Example: shows = guidebox.Show.list(channel="amazon_prime")
@@ -16,12 +16,8 @@ movies = Guidebox.movies.list();
 //sets limit for number of shows displayed
 var shows = Guidebox.shows.list({limit: 12, offset: 12});
 
-// "tv_everywhere_web_sources": [
-//   {
-//       "source": "hbo",
-//       "display_name": "HBO GO",
-//       "tv_channel": "HBO",
-//       "id": 8641625,
-//       "link": "http://www.hbogo.com/#series/video&assetID=GOROSTGP55610?videoMode=embeddedVideo/"
-//   }
-//   ]
+function getShows(text) {
+  let endPoint = "http://api-public.guidebox.com/v2/shows?";
+  let api_key = "7d4cf0b3e896a3e8cc71cf02afe6169394482044";
+  let queryURL = endPoint + "?q=" + text + "&limit=12" + "&api_key=" + api_key;
+}

@@ -48,7 +48,7 @@ class ShowRepeater extends Component {
 }
 
 class HomePage extends Component {
-  API_Key = "7d4cf0b3e896a3e8cc71cf02afe6169394482044";
+  API_Key = "914b83d609231426dc9fae41674570a087db94aa";
   API_URL = "http://api-public.guidebox.com/v2/shows";
   huluData = {}
   netflixData = {}
